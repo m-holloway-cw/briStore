@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Briciusss | Cart</title>
+   <link rel="icon" href="/img/BriciusssIcon.png" type="image/x-icon" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+   <link type="text/css" href="/css/cart.css" rel='stylesheet'>
+   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <script src="/js/cart.js" defer></script>
+   <script>
+   $(function(){
+     $("#header").load("nav.html", function(){
+       document.getElementById('artLink').className = "";
+       document.getElementById('homeLink').className = "";
+       document.getElementById('merchLink').className = "";
+       document.getElementById('cartLink').className = "active";
+     });
+     $("#footer").load("footer.html");
+   });
+ </script>
+  </head>
+  <nav>
+   <div id="header"></div>
+ </nav>
+
+  <body>
+    <p class= "banner center animate__animated animate__fadeIn"> <img src="img/Briciusss Cart Banner.png" width="100%"></p>
+
+    <div id="container">
+          <a href="/merch">Continue Shopping</a>
+      <div id="cartContainer">
+        <table id="shoppingCart">
+          <thead>
+              <tr>
+                <th class="tCol" scope="col">Item</th>
+                <th class="tCol" scope="col">Qty</th>
+                <th class="tCol" scope="col">Price</th>
+              </tr>
+          </thead>
+          <tbody id="cartTableBody">
+          </tbody>
+        </table>
+        <p id="subTotal"><strong>Sub Total</strong>: <span id="sTotal"></span></p>
+      </div>
+    <div id="formContainer">
+      <form id="checkoutForm">
+        <label><input type="text" name="name" required/>  Name   </label><p class='errorMsg' id="nameError"></p></br>
+        <label><input type="email" name="email" required/>  Email   </label><p class='errorMsg' id="emailError"></p></br>
+        <label><input type="tel" name="phone" />  Phone   </label><p class='errorMsg' id="phoneError"></p></br>
+        <label><input type="text" name="address" required/>  Address   </label><p class='errorMsg' id="addressError"></p></br>
+        <label><input type="text" name="city" required/>  City   </label><p class='errorMsg' id="cityError"></p></br>
+      </form>
+    </div>
+    <p id="shipping"><strong>Shipping</strong>: <span id="shippingTotal">--</span></p>
+    <p id="taxes"><strong>Taxes and Fees</strong>: <span id="taxesTotal">--</span></p>
+    <p id="final"><strong>Final Total</strong>: <span id="fTotal">--</span></p>
+    <div id="paypalButtonContainer">
+    <button class="btn" id="checkoutBtn" onclick="openInfoForm()">Start Checkout</button>
+        </div>
+        <p id='errorMsg' style='text-align: center;'></p>
+    </div>
+  </body>
+  <footer>
+      <div id="footer"></div>
+    </footer>
+</html>

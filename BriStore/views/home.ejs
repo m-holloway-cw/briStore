@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>Briciusss | Home</title>
+   <link rel="icon" href="/img/BriciusssIcon.png" type="image/x-icon" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+   <link type="text/css" href="/css/home.css" rel='stylesheet'>
+   <script src="https://embed.twitch.tv/embed/v1.js"></script>
+   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <script src="/js/home.js" defer></script>
+   <script>
+    $(function(){
+      $("#header").load("nav.html", function(){
+        document.getElementById('artLink').className = "";
+        document.getElementById('homeLink').className = "active";
+        document.getElementById('merchLink').className = "";
+	document.getElementById('cartLink').className = "";
+      });
+      $("#footer").load("footer.html");
+    });
+   </script>
+  </head>
+  <nav>
+    <div id="header"></div>
+  </nav>
+  <body>
+  <p class= "banner center animate__animated animate__fadeIn"> <img src="img/Briciusss Home Banner.png" width="100%"></p>
+  <div class="intro">
+  	<p>Briciusss is a variety streamer on Twitch <a href="https://www.twitch.tv/briciusss"><img src="img/twitch-icon.png" width="auto" height="25" alt="Twitch Icon"></a> <br>
+      Basically just chatting while playing video games and the occassional art stream. Come say hi and chill!<br>
+  	Stream Schedule is Monday and Wednesday at 7:30pm PST and Friday and Saturday at 8:30pm PST.
+  	</p>
+  	<!--<iframe src="https://player.twitch.tv/?channel=briciusss&parent=briciusss.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>-->
+    <div id="twitch-embed"></div>
+  </div>
+  <br>
+  <div class="row">
+  	<div class= "center column">
+  		<img src="img/about me.png">Hi! My name is Briciusss (Pronounced Bry-cee-us). People call me Bri for short.<br>
+
+  I play a variety of games including FPS games, spooky games, and cozy games!  I love creating artwork and listening to all kinds of music! <br>
+Building a positive gamming community one "Brick" at a time.
+
+  <img src="img/rules.png">
+  <strong>Rules in stream chat:</strong>
+    <ul>
+  		<li>Be a decent person</li>
+  		<li>Have fun</li>
+  		<li>No discrimination tolerated!</li>
+    </ul>
+  	</div>
+  	<div class= "center column">
+  		<a href="https://www.paypal.com/donate/?hosted_button_id=QXZ3LVHGEBLSW"><img src="img/Donate.png"></a>Never ever required, but any support is appreciated! <a href="https://throne.me/u/briciusss"> <img src="img/throne_twitchbio.png" alt="Throne Icon"></a>
+  	</div>
+  	<div class= "center column">
+  	<strong>Channel and Subscriber Emotes:</strong><img src="img/Channel Emotes Showcase.png"> <p>Click here to use FFZ or BTTV Emotes in Briciusss' Twitch Chat </p><img src="img/ffzbttvEmotes.png">
+  	</div>
+  	<div class= "center column">
+  		<img src="img/goals.png">
+      <ul>
+        <li>500 followers - art and commission give away (goal reached!)</li>
+        <li>750 followers - merch launch!!  (goal reached!)</li>
+        <li>1000 followers - Kim Possible Cosplay</li>
+        <li>1500 followers - choose my new hair color</li>
+      </ul>
+      <img src="img/Twitch pannels specs.png">
+      <strong>Computer:</strong>
+    <ul>
+      <li>NVIDIA 1070</li>
+      <li>I7 8700K</li>
+      <li>16GB DDR4</li>
+      <li>MSI motherboard</li>
+    </ul>
+  	</div>
+  </div>
+	 <div>
+<div>
+<script type="text/javascript">
+new Twitch.Embed("twitch-embed", {
+    width: 620,
+    height: 378,
+    channel: "briciusss",
+    layout: "video"
+  });
+
+</script>
+	  </div>
+
+  	<div class="intro">
+  	<p>Keep up with me on Twitch, YouTube and other socials below:<br>
+  	</p>
+  	</div>
+  </body>
+  <footer>
+    <div id="footer"></div>
+  </footer>
+</html>

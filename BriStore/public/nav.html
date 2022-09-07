@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nav</title>
+		<link rel="stylesheet" type="text/css" href="css/nav.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+	<nav class="grownav nav">
+	  <a href="https://www.briciusss.com">
+	    <img class= "logo" src="img/briciuHi.png" width= "25px" alt="Briciusss Logo">
+	  </a>
+		<div style="float:right">
+	        <a id="homeLink" href="https://www.briciusss.com">Home</a>
+	        <a id="merchLink" href="https://www.briciusss.com/merch">Merch</a>
+	        <a id="artLink" href="https://www.briciusss.com/art">Art</a>
+					<a id="cartLink" href="https://www.briciusss.com/cart">Cart<span id="cartNotif" class="cartBadge"></span></a>
+
+	  </div>
+	</nav>
+	<script>
+		function getCart(){
+		  $.ajax({
+		    url: '/getCart',
+		    type: 'get',
+		    success:function(data){
+					var notifs = 0;
+		      for (var i = 0; i < data.length; i++){
+		        var qty = data[i].quantity;
+		        notifs = notifs + qty;
+		      }
+					if(notifs == 0){
+						document.getElementById('cartNotif').style.display = "none";
+					} else {
+						document.getElementById('cartNotif').style.display = "";
+						document.getElementById('cartNotif').innerHTML = notifs;
+					}
+
+		    },
+		    error: function(XMLHttpRequest, textStatus, errorThrown) {
+		      //  alert("Error occurred in getting merch products from server");
+		      console.log('error occurred in getting merch products')
+		      }
+		  });
+		};
+		getCart();
+	</script>
+<body>
+</body>
+</html>

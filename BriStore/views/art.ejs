@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Briciusss | Art</title>
+<link rel="icon" href="/img/BriciusssIcon.png" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="css/art.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script>
+ $(function(){
+	 $("#header").load("nav.html", function(){
+		 document.getElementById('artLink').className = "active";
+		 document.getElementById('homeLink').className = "";
+		 document.getElementById('merchLink').className = "";
+		 document.getElementById('cartLink').className = "";
+	 });
+	 $("#footer").load("footer.html");
+ });
+</script>
+</head>
+<nav>
+ <div id="header"></div>
+</nav>
+<body>
+<p class= "banner center animate__animated animate__fadeIn"> <img src="img/Briciusss Art Banner.png" width="100%"></p>
+<div class="row">
+	<div class= "grow column">
+		<img src="img/batgirl.png" oncontextmenu="return false;"><img src="img/Bluebutterfly.jpg" oncontextmenu="return false;"><img src="img/Galaxy Girl for QinniArt.jpg" oncontextmenu="return false;">
+	</div>
+	<div class= "grow column">
+		<img src="img/Cherry Blossom.png" oncontextmenu="return false;"><img src="img/brb scene.png" oncontextmenu="return false;"><img src="img/Red Riding Hood.jpg" oncontextmenu="return false;"><img src="img/Little Bricks.JPG" oncontextmenu="return false;">
+	</div>
+	<div class= "grow column">
+		<img src="img/teal cat emotes.png" oncontextmenu="return false;"><img src="img/Jinx.jpg" oncontextmenu="return false;"><img src="img/Cinnamon roll.png" oncontextmenu="return false;"><img src="img/Vampire.png" oncontextmenu="return false;">
+	</div>
+	<div class= "grow column">
+		<img src="img/BriciuBlush.png" oncontextmenu="return false;"><img src="img/Deer.jpg" oncontextmenu="return false;"><img src="img/viper.jpg" oncontextmenu="return false;">
+	</div>
+</div>
+</body>
+<footer>
+	<div id="footer"></div>
+</footer>
+</html>

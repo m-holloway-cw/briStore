@@ -1,0 +1,67 @@
+.logo {
+	-webkit-transform: scale(2.5);
+	-ms-transform: scale(2.5);
+	transform: scale(2.5)4
+}
+
+.grownav img{
+	transition: 1s ease;
+}
+
+.grownav img:hover{
+	-webkit-transform: scale(3);
+	-ms-transform: scale(3);
+	transform: scale(3);
+	transition: 1s ease;
+}
+
+.nav {
+	font-family: 'Raleway', serif;
+	width: 100%;
+	background-color: #9754ff;
+	background-image: linear-gradient(45deg, #00ffcc 0%, #6603fc 50%, #FF3CAC 100%);
+	overflow: hidden;
+ 	position: fixed;
+ 	top: 0;
+	z-index: 99999;
+}
+
+.nav a {
+	float: left;
+	text-align: center;
+	padding: 30px;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	width: 53px;
+}
+
+.nav a:hover {
+	color: #fff;
+ 	outline: 0;
+ 	box-shadow: 0 0 10px 0 #FFFFFF inset, 0 0 10px 4px #FFFFFF;
+}
+
+.cartBadge {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  padding: 5px 10px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+#cartNotif {
+}
+
+.active {
+	background-color: #6603fc;
+}
+
+@media screen and (max-width: 500px) {
+  .nav a {
+	float: none;
+    display: block;
+  }
+}

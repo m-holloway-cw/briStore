@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Briciusss | Merch</title>
+
+   <link rel="icon" href="/img/BriciusssIcon.png" type="image/x-icon" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+
+   <link type="text/css" href="/css/merch.css" rel='stylesheet'>
+   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+   <script src="/js/merch.js" defer></script>
+   <script>
+     $(function(){
+       $("#header").load("nav.html", function(){
+         document.getElementById('artLink').className = "";
+         document.getElementById('homeLink').className = "";
+         document.getElementById('merchLink').className = "active";
+         document.getElementById('cartLink').className = "";
+         refreshCart();
+       });
+       $("#footer").load("footer.html");
+     });
+   </script>
+
+  </head>
+  <nav>
+   <div id="header"></div>
+ </nav>
+  <body>
+    <p class= "banner center animate__animated animate__fadeIn"> <img src="img/Briciusss Merch Banner.png" width="100%"></p>
+    <div id="wrapper">
+      <div id='products-container' class="grid-container">
+        </div>
+
+    <div id="productWrapper" class="flex-container">
+    </div>
+        </div>
+  </body>
+  <footer>
+    <div id="footer"></div>
+  </footer>
+</html>

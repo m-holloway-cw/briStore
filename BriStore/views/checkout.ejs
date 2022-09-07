@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Briciusss</title>
+   <link rel="icon" href="https://i.imgur.com/FtRLUBG.png" type="image/x-icon" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
+   <link type="text/css" href="/css/checkout.css" rel='stylesheet'>
+  </head>
+  <body>
+    <div>
+      <p>Checkout page</p>
+    </div>
+    <div id="container">
+      <div id="cartContainer">
+        <table id="shoppingCart">
+          <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Qty</th>
+                <th scope="col">Price</th>
+              </tr>
+          </thead>
+          <tbody id="cartTableBody">
+          </tbody>
+        </table>
+        <p id="subTotal"><strong>Sub Total</strong>: <span id="sTotal"></span></p>
+        <ul>
+          <li>
+            <input type="submit" name="update" value="Update Cart" class="btn" id="updateCartBtn" />
+          </li>
+          <li>
+            <input type="submit" name="delete" value="Empty Cart" class="btn" id="emptyCartBtn" />
+          </li>
+          <li>
+            <a href="/merch">Continue Shopping</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="/js/checkout.js"></script>
+  </body>
+
+</html>
